@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dados/Perfil - Get Job</title>
+    <link rel="stylesheet" href="perfil.css">
+</head>
+<body class="um">
+    <div>
+        <h1 id="titulo">Preenchimento de Dados e Montagem de Perfil</h1>
+        <p id="subtitulo">Monte seu Perfil e Informe Seus Dados</p>
+        <br>
+    </div>
+
+    <form>
+        <fieldset class="grupo">
+            <div class="campo">
+                <label for="nome"><strong>Nome:</strong></label>
+                <input type="text" name="nome" id="nome">
+            </div>
+
+            <div class="campo">
+                <label for="sobrenome"><strong>Sobrenome:</strong></label>
+                <input type="text" surname="sobrenome" id="sobrenome">
+            </div>
+
+            <div class="campo">
+                <label for="nomedeusuario"><strong>Nome de Usuário:</strong></label>
+                <input type="text" username="nomedeusuario" id="nomedeusuario">
+            </div>
+
+            <div class="campo">
+                <label for="idade"><strong>Idade do Usuário:</strong></label>
+                <input type="text" age="idade" id="idade">
+            </div>
+        </fieldset>
+
+        <div class="campo">
+            <label><strong>O que você é?</strong></label>
+            <label>
+                <input type="radio" name="davweb" id="papel" value="Empresário(a)">Dono de negócio ou empresa
+            </label>
+            <label>
+                <input type="radio" name="davweb" id="papel" value="Desempregado(a)">Desempregado(a)
+            </label>
+        </div>
+
+        <div class="campo">
+            <label for="De qual país você é?"><strong>De qual estado você é?</strong></label>
+            <select id="País">
+                <option selected disabled value="">Selecione</option>
+                <option>Piauí</option>
+                <option>São Paulo</option>
+                <option>Maranhão</option>
+                <option>Paraíba</option>
+                <option>Ceará</option>
+                <option>Bahia</option>
+            </select>
+        </div>
+<br>
+        <fieldset class="grupo">
+            <div id="check">
+                <label>Selecione seu grau de Escolaridade:</label><br><br>
+                <input type="checkbox" id="scholl" name="Grau de Escolaridade" value="Fundamental Completo">
+                <label for="">Fundamental Completo</label>
+                <input type="checkbox" id="scholl" name="Grau de Escolaridade" value="Ensino Médio Completo">
+                <label for="">Ensino Médio Completo</label>
+                <input type="checkbox" id="scholl" name="Grau de Escolaridade" value="Graduado">
+                <label for="">Graduado</label>
+                <input type="checkbox" id="scholl" name="Grau de Escolaridade" value="Nenhum Estudo">
+                <label for="">Nenhum Estudo</label>
+            </div>
+        </fieldset>
+
+        <div class="campo">
+
+            <br>
+            <label><strong>Faça suas exigências para proteção de conta:</strong></label>
+            <select id="Proteção de Conta">
+                <option selected disabled value="">Selecione</option>
+                <option>Reconhecimento Facial</option>
+                <option>Digital</option>
+                <option>PIN</option>
+            </select>
+        </div>
+
+        <!--<a href="planos.html" class="tres">Concluído</a> -->
+        <input type="button" value="Cadastrar" class="tres" onclick="cadastrar()">
+    </form>
+    <script src="jquery-3.7.1.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
